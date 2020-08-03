@@ -1,0 +1,72 @@
+.container-gray{
+	background: #f9f9f9;
+}
+.group{
+	display: block;
+	width: 100%;
+}
+.group-header{
+	line-height: 70rpx;
+	display: flex;
+	padding: 0 20rpx;
+	background: #f9f9f9;
+}
+.group-body{
+	background: #fff;
+	border-top: 1rpx solid #ddd;
+	border-bottom: 1rpx solid #ddd;
+}
+/* 报销物品的排布 */
+.multiple-select{
+	padding: 20rpx;
+	display: flex;
+	flex-wrap: wrap;
+}
+/* 每个元素的排布 */
+.multiple-select view{
+	flex: 0 0 25%;
+	max-width: 25%;
+	padding: 10rpx;
+	box-sizing: border-box;
+}
+/* 每个元素的边框 */
+.multiple-select text{
+	display: block;
+	border: 1rpx solid #ddd;
+	line-height: 66rpx;
+	color: #666;
+	font-size: 28rpx;
+	text-align: center;
+	border-radius: 4rpx;
+}
+/* 选中后的高亮效果 */
+.multiple-select text.active{
+	background: #f7982a;
+	color: #fff;
+	border-color: #f7982a;
+}
+
+/* 问题描述部分样式 */
+textarea{
+	width: 100%;
+	padding: 20rpx;
+  box-sizing: b
+  order-box;
+}
+
+
+button{
+	font-size: 32rpx;
+	line-height: 72rpx;
+}
+.btn-block{
+	width: 100%;
+	line-height: 88rpx;
+}
+.btn-orange{
+	background: #f7982a;
+	color: #fff;
+}
+.btn-submit{
+	padding: 20rpx;
+}

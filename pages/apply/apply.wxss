@@ -1,0 +1,140 @@
+/* 整个页面的底色 */
+.container-gray {
+  background: #f9f9f9;
+}
+
+/* 基本信息、创始人、产品亮点、产品指标数据、融资信息这几个大块的样式 */
+.group {
+  display: block;
+  width: 100%;
+}
+
+.group-header {
+  line-height: 70rpx;
+  display: flex;
+  padding: 0 20rpx;
+  background: #f9f9f9;
+}
+
+.group-body {
+  background: #fff;
+  border-top: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.group-body .input-list {
+  margin: 0;
+  border: none;
+}
+
+/* “提交”按钮的样式 */
+.btn-submit {
+  padding: 20rpx;
+}
+
+.btn-block {
+  width: 100%;
+  line-height: 88rpx;
+}
+
+.btn-orange {
+  background: #f7982a;
+  color: #fff;
+}
+
+.btn-gray {
+  background: #e8e8e8;
+  color: #333;
+}
+
+/* 输入部分样式 */
+.input-list {
+  padding: 0 20rpx;
+  margin: 20rpx 0;
+  background: #fff;
+  border-top: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.input-list .input-item {
+  padding: 20rpx;
+  line-height: 2;
+  display: flex;
+  font-size: 30rpx;
+  border-top: 1rpx solid #e8e8e8;
+}
+
+.input-list .input-item:first-child {
+  border-top: 0;
+}
+
+.input-item-label {
+  display: block;
+  width: 5em;
+  color: #666;
+}
+
+.input-item-content {
+  color: #333;
+  flex: 1;
+}
+
+/* 输入内容占用整行，行级元素 */
+.input-item.input-item-full {
+  display: block;
+}
+
+.input-item.input-item-full .input-item-label {
+  width: 100%;
+}
+
+.input-item.input-item-full .input-item-content {
+  width: 100%;
+}
+
+/* 富文本框样式 */
+textarea {
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.input-item.input-item-full textarea {
+  padding: 0;
+  height: 150rpx;
+  border: 1rpx solid #e8e8e8;
+  padding: 10rpx;
+}
+
+/* 是让输入的label自适应，不要换行 */
+.input-item.input-item-adaption .input-item-label {
+  width: auto;
+  margin-right: 20rpx;
+}
+
+/* “项目图标”相关样式 */
+.img-upload {
+  display: flex;
+  padding: 20rpx;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.img-upload .img-item,
+.img-upload .img-add {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 10rpx;
+  border: 1rpx solid transparent;
+}
+
+.img-upload .img-add {
+  border: 1rpx dashed #ddd;
+  /* 下面这种写法是不对的，要改成base64格式的数据 */
+  background: url(../../images/add.png) no-repeat 50% 50% / 70% auto;
+}
+
+.img-upload .img-item image {
+  width: 100rpx;
+  height: 100rpx;
+}

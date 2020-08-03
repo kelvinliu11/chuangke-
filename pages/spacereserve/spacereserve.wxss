@@ -1,0 +1,56 @@
+
+/* 输入部分样式 */
+.input-list {
+  padding: 0 20rpx;
+  margin: 20rpx 0;
+  background: #fff;
+  border-top: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd;
+}
+
+/* 去掉第一个元素的上边框线 */
+.input-list .input-item:first-child {
+  border-top: 0;
+}
+
+.input-list .input-item {
+  padding: 20rpx;
+  line-height: 2;
+  display: flex;
+  font-size: 30rpx;
+  border-top: 1rpx solid #e8e8e8;
+}
+
+/* 主要是为了让联系人和手机号码两个label占一样宽 */
+.input-item-label {
+  display: block;
+  width: 5em;
+  color: #666;
+}
+
+.input-item-content {
+  color: #333;
+  flex: 1;
+}
+
+/* 这里控制了输入框的高度，其实看起来还是有点不对齐，应该要上下对齐的 */
+input {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-family: inherit;
+}
+
+/* “确认预约”，按钮样式，这里要注意的是，默认创建的项目在app.json里面有个style：v2的，不去掉的话，会有button的默认属性，user agent stylesheet，跟我们期望会不太一样，可参考：https://developers.weixin.qq.com/community/develop/doc/00006a9e560b10f0f3893719351000 */
+.btn-submit {
+  padding: 20rpx;
+}
+
+.btn-block {
+  width: 100%;
+  line-height: 88rpx;
+}
+
+.btn-orange {
+  background: #f7982a;
+  color: #fff;
+}

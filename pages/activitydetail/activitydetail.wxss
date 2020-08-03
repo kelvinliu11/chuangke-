@@ -1,0 +1,100 @@
+
+/* swiper轮播图样式 */
+.space-banner{
+	position: relative;
+}
+
+.space-top,.space-block{
+	padding: 20rpx;
+	background: #fff;
+	margin-bottom: 20rpx;
+	border-bottom: 1rpx solid #ddd;
+}
+
+.space-banner swiper{
+	width: 100%;
+	height: 360rpx;
+}
+
+.space-banner .slide-image{
+	width: 100%;
+	height: 360rpx;
+}
+
+
+/* 这里是在swiper上显示数字的样式 */
+.number-banner{
+	position: absolute;
+	right: 40rpx;
+	margin-top: -80rpx;
+	padding: 0 16rpx;
+	background: rgba(0,0,0,.3);
+	border-radius: 6rpx;
+	color: #fff;
+	font-size: 36rpx;
+}
+.number-banner text:last-child{
+	color: rgba(255,255,255,.6);
+	font-size: 30rpx;
+}
+
+/* 下面是swiper下面的活动概述部分 */
+.space-title{
+	font-size: 44rpx;
+	line-height: 2;
+}
+
+/* 报名情况，里面数字高亮显示 */
+.space-item{
+	display: flex;
+	font-size: 32rpx;
+	color: #555;
+	padding: 16rpx 0;
+	border-bottom: 1rpx solid #eee;
+}
+
+.space-item .text-orange{
+	font-size: 40rpx;
+	color: #f7982a;
+	line-height: 1;
+}
+
+/* 下面是活动介绍样式 */
+.space-block{
+	border-top: 1rpx solid #ddd;
+}
+.space-block-title{
+	font-size: 40rpx;
+}
+/* 在“活动介绍”前面加一个竖亮黄条 */
+.space-block-title:before{
+	content: '';
+	display: inline-block;
+	vertical-align: -6rpx;
+	width: 6rpx;
+	height: 40rpx;
+	background: #f7982a;
+	margin-right: 8rpx;
+}
+/* 活动介绍里面的文字样式 */
+.space-passage{
+	font-size: 30rpx;
+	text-indent: 2em;
+	margin-top: 20rpx;
+}
+
+/* 我要报名  按钮样式 */
+.container-footer text.apply-btn{
+	background: #f7982a;
+	color: #fff;
+	flex: 1.5;
+}
+.container-footer text{
+	flex: 1;
+	display: block;
+	text-align: center;
+	height: 88rpx;
+	line-height: 88rpx;
+	font-size: 34rpx;
+	border-left: 1rpx solid #ddd;
+}
